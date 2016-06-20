@@ -678,10 +678,12 @@ a:hover .lnk-icon-right {
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
   padding: 10px 0;
+  margin-left: -5px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 770px) {
   .fh5co-nav-style-1 .fh5co-link-wrap ul li a, .fh5co-nav-style-2 .fh5co-link-wrap ul li a {
     margin: 0 5px;
+    margin-left: -5px;
   }
 }
 .fh5co-nav-style-1 .fh5co-link-wrap ul li a:hover, .fh5co-nav-style-2 .fh5co-link-wrap ul li a:hover {
@@ -904,7 +906,7 @@ a:hover .lnk-icon-right {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
   line-height: 26px;
-  color: #fff;
+  color: black;
 }
 .fh5co-cover .fh5co-cover-text .btn-outline {
   border: 2px solid #fff;

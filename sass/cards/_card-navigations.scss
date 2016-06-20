@@ -247,6 +247,7 @@
 					padding: 10px 0;
 					@media screen and (max-width: $screen-md) {
 						margin: 0 5px;
+						margin-left: -5px;
 					}
 					&:hover {	
 						text-decoration: none;
