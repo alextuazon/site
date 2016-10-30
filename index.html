@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -13,19 +12,50 @@
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FreeHTML5.co" />
 
-  <!-- 
-	//////////////////////////////////////////////////////
-
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FreeHTML5.co
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
-
-	//////////////////////////////////////////////////////
-	 -->
+	<style>
+    .container{
+    width:400px;height:300px;
+    position: relative;
+    perspective: 800px;
+    margin:0 auto;
+    }
+    .card{
+    text-align:center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    }
+    .card h3{color:#fff;}
+    .card p{color:#fff;font-family: 'Lato', sans-serif;font-weight:300;}
+    .card:hover .front {
+    transform: rotateY(-180deg);
+    }
+    .card:hover .back {
+    transform: rotateY(0deg);
+    }
+    .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; backface-visibility: hidden; transition: 0.5s;
+    }
+    .face.front{
+    background:#000;
+    transform: rotateY(0deg);
+    }
+    .face.back {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 20px;
+    color: white;
+    text-align: left;
+    background-color: #333;
+    }
+    .card a.btn.btn-block{display:block;}
+    .card a.btn.btn-outline{background:transparent;border:1px solid #fff;border-radius:3px;padding:10px;color:#fff;text-align:center;text-decoration:none;}
+    .card a.btn.btn-outline:hover{background:#222;border:1px solid transparent;}
+  	</style>
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -152,23 +182,71 @@
 					<div class="col-md-4 col-sm-4 col-xs-12 section-heading">
 						<h2>04. Meet Your Mentors</h2>
 					</div>
-					<div class="col-md-8 col-sm-8 col-xs-12">
+					<div class="col-md-12 col-sm-12 col-xs-12">
 						<div class="row">
 
-							<div class="col-md-12">
-								<img class="col-md-6 col-xs-12 col-sm-12" src="images/alex.jpg" alt="">
-								<p class="col-md-6 col-xs-12 col-sm-12"><strong>Alexander Tuazon</strong> - Alex learned to program when he was 13. His first programming language was Scratch. He became a full stack developer after graduating from CodingDojo in Silicon Valley in 2014. He has been developing apps since then and has 4 apps in the app store. He is the CEO and co-founder of <a href="https://relyphe.com">relyphe.com</a> - a magical place full of people that matter to you waiting to be appreciated by you. A social environment where gratitude unlocks the fullness of life. He loves watching movies on Netflix, riding his bike around town, and playing basketball.</p>
+							<div class="col-md-4">
+								<div class="info">
+									<div class="card">
+      									<div class="face front">
+        									<img width="398.98px" height="802px" src="images/alex.jpg">
+      									</div>
+      									<div class="face back">
+        									<h3>Alexander Tuazon</h3>
+        									<p>Alex learned to program when he was 13. His first programming language was Scratch. He became a full stack developer after graduating from CodingDojo in Silicon Valley in 2014. He has been developing apps since then and has 4 apps in the app store. He is the CEO and co-founder of <a href="https://relyphe.com">relyphe.com</a> - a magical place full of people that matter to you waiting to be appreciated by you. A social environment where gratitude unlocks the fullness of life. He loves watching movies on Netflix, riding his bike around town, and playing basketball.</p>
+      									</div>
+    								</div>
+
+									<p id="hide">If you may stil have a nagging doubt: what if my dentist were wrong?</p>
+									<p id="hide">No matter how much you like or trust your dentist, it's natural to wonder if something was missed or if a new treatment is available. In our office we encourage our valued patients to get a second opinion especially when a treatment recommended requires a big decision.</p>
+									<p id="hide">$49.00 in our opinion, will stop your obsession with "what ifs", confirm the direction you are already headed, and feel more confident that you've made the best possible choice. If you decide to stay with us, you get to use the $49 towards the recommended treatment as an appreciation of your trust and you get to qualify for our <strong>free lifetime whitening program.</strong></p>
+									<p id="hide">Call us for details <a href="tel:+1-707-451-4100">707-451-4100</a></p>
+									<p id="hide" style="font-size: 12px;">*Additional charges may apply.</p>
+								</div> 
 							</div>
 
-							<div class="col-md-12">
-								<img class="col-md-6 col-xs-12 col-sm-12" src="images/jacob.jpg" alt="">
-								<p class="col-md-6 col-xs-12 col-sm-12"><strong>Jacob Tuazon</strong> - Jacob started coding at the age of 8. His first programming language was objective - C. He developed a calculator, dog years calculator, tic tac toe, animal trivia etc. in iOS. He currently has 4 apps in the app store he co developed with his brother Alex. He is the co-founder at relyphe.com. He programs in HTML, CSS, Javascript, Objective-C and Swift. He is passionate about basketball, playing video games like minecraft, making videos for youtube, solving puzzles like sudoku.</p>
+							<div class="col-md-4">
+								<div class="info">
+									<div class="card">
+      									<div class="face front">
+        									<img width="398.98px" height="802px" src="images/jacob.jpg">
+      									</div>
+      									<div class="face back">
+        									<h3>Jacob Tuazon</h3>
+        									<p>Jacob started coding at the age of 8. His first programming language was objective - C. He developed a calculator, dog years calculator, tic tac toe, animal trivia etc. in iOS. He currently has 4 apps in the app store he co developed with his brother Alex. He is the co-founder at <a href="https://relyphe.com">relyphe.com</a>. He programs in HTML, CSS, Javascript, Objective-C and Swift. He is passionate about basketball, playing video games like minecraft, making videos for youtube, solving puzzles like sudoku.</p>
+      									</div>
+    								</div>
+
+									<p id="hide">If you may stil have a nagging doubt: what if my dentist were wrong?</p>
+									<p id="hide">No matter how much you like or trust your dentist, it's natural to wonder if something was missed or if a new treatment is available. In our office we encourage our valued patients to get a second opinion especially when a treatment recommended requires a big decision.</p>
+									<p id="hide">$49.00 in our opinion, will stop your obsession with "what ifs", confirm the direction you are already headed, and feel more confident that you've made the best possible choice. If you decide to stay with us, you get to use the $49 towards the recommended treatment as an appreciation of your trust and you get to qualify for our <strong>free lifetime whitening program.</strong></p>
+									<p id="hide">Call us for details <a href="tel:+1-707-451-4100">707-451-4100</a></p>
+									<p id="hide" style="font-size: 12px;">*Additional charges may apply.</p>
+								</div> 
 							</div>
 
-							<div class="col-md-12">
-								<img class="col-md-6 col-xs-12 col-sm-12" src="images/daniel.jpg" alt="">
-								<p class="col-md-6 col-xs-12 col-sm-12"><strong>Daniel Tuazon</strong> - Daniel started learning scratch at the age of 6. He has created 30 plus projects in scratch. He is energetic and curious. He is motivated and always excited to learn new things. He loves riding his bike and drawing pictures of about everything. He is an all around awesome kid.</p>
+							<div class="col-md-4">
+								<div class="info">
+									<div class="card">
+      									<div class="face front">
+        									<img width="398.98px" height="802px" src="images/daniel.jpg">
+      									</div>
+      									<div class="face back">
+        									<h3>Daniel Tuazon</h3>
+        									<p>Daniel started learning scratch at the age of 6. He has created 30 plus projects in scratch. He is energetic and curious. He is motivated and always excited to learn new things. He loves riding his bike and drawing pictures of about everything. He is an all around awesome kid.</p>
+      									</div>
+    								</div>
+
+									<p id="hide">If you may stil have a nagging doubt: what if my dentist were wrong?</p>
+									<p id="hide">No matter how much you like or trust your dentist, it's natural to wonder if something was missed or if a new treatment is available. In our office we encourage our valued patients to get a second opinion especially when a treatment recommended requires a big decision.</p>
+									<p id="hide">$49.00 in our opinion, will stop your obsession with "what ifs", confirm the direction you are already headed, and feel more confident that you've made the best possible choice. If you decide to stay with us, you get to use the $49 towards the recommended treatment as an appreciation of your trust and you get to qualify for our <strong>free lifetime whitening program.</strong></p>
+									<p id="hide">Call us for details <a href="tel:+1-707-451-4100">707-451-4100</a></p>
+									<p id="hide" style="font-size: 12px;">*Additional charges may apply.</p>
+								</div> 
 							</div>
+
+							
+
 					</div>
 				</div>
 			</div>
@@ -245,4 +323,3 @@
 
 	</body>
 </html>
-
